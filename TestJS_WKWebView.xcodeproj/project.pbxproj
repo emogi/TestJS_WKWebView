@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE3BE65B258A88AC0008D8C0 /* tic-tac-toe in Resources */ = {isa = PBXBuildFile; fileRef = BE3BE65A258A88AC0008D8C0 /* tic-tac-toe */; };
 		FC2726621EEB2194003E3194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2726611EEB2194003E3194 /* AppDelegate.swift */; };
 		FC2726641EEB2194003E3194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2726631EEB2194003E3194 /* ViewController.swift */; };
 		FC2726661EEB2194003E3194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2726651EEB2194003E3194 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE3BE65A258A88AC0008D8C0 /* tic-tac-toe */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "tic-tac-toe"; sourceTree = "<group>"; };
 		FC27265E1EEB2194003E3194 /* TestJS_WKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestJS_WKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2726611EEB2194003E3194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2726631EEB2194003E3194 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				FC2726671EEB2194003E3194 /* Main.storyboard */,
 				FC27266A1EEB2194003E3194 /* Info.plist */,
 				FCAC76731EEBBDEE00355E56 /* try.html */,
+				BE3BE65A258A88AC0008D8C0 /* tic-tac-toe */,
 			);
 			path = TestWKWebView;
 			sourceTree = "<group>";
@@ -107,6 +110,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -126,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2726661EEB2194003E3194 /* Assets.xcassets in Resources */,
+				BE3BE65B258A88AC0008D8C0 /* tic-tac-toe in Resources */,
 				FC2726691EEB2194003E3194 /* Main.storyboard in Resources */,
 				FCAC76741EEBBDEE00355E56 /* try.html in Resources */,
 			);

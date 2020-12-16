@@ -14,15 +14,21 @@ class ViewController: NSViewController, WKScriptMessageHandler {
     @IBOutlet var webV: WKWebView!
     
     @IBAction func showJSAlert(_ sender: Any) {
-        let js = "hideText();"
-        webV.evaluateJavaScript(js, completionHandler: nil)
+//        let js = "hideText();"
+        let js = "testMeAdam();"
+        webV.evaluateJavaScript(js) { (result, error) in
+            print(result)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         webV.configuration.userContentController.add(self, name: "jsHandler")
-        let bundleURL = Bundle.main.resourceURL!.absoluteURL
-        let html = bundleURL.appendingPathComponent("try.html")
+//        webV.load(URLRequest(url: URL(string: "https://proto.emogi.com/appbits/ticktacktoe/dist/index.html")!))
+        
+        
+        let bundleURL = Bundle.main.resourceURL!.absoluteURL.appendingPathComponent("tic-tac-toe").appendingPathComponent("dist")
+        let html = bundleURL.appendingPathComponent("index.html")
         webV.loadFileURL(html, allowingReadAccessTo:bundleURL)
     }
 
